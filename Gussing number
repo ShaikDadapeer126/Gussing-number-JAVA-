@@ -1,0 +1,28 @@
+package mini_project;
+
+import java.util.*;
+class finding_random_number {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int Mynumber = ((int)(Math.random()*100));
+		int number = 0;
+		
+		do {
+			System.out.print("GUESS NUMBER FROM 1-100 : ");
+			number = sc.nextInt();
+			if(number == Mynumber) {
+				System.out.println("WOOOW.... CORRECT NUMBER!!!	");
+				break;
+			}
+			else if(Mynumber < number) {
+				System.out.println("Your number is too Large");
+			}
+			else {
+				System.out.println("Your number is too Small");
+			}
+		}while(number >=0);
+//		System.out.print("Your NUmber is : ");
+//		System.out.println(number);
+		System.out.println("YOUR NUMBER IS : "+number);
+	}
+}

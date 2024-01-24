@@ -1,4 +1,3 @@
-package mini_project;
 
 import java.util.*;
 class finding_random_number {
